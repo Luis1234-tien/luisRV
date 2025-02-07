@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar en RV</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Sol -->
+      <a-sphere color="#FFD700" radius="2" position="0 1 -5">
+        <a-animation attribute="rotation" to="0 360 0" dur="10000" repeat="indefinite"></a-animation>
+        <a-texture src="https://www.solarsystemscope.com/textures/download/2k_sun.jpg"></a-texture>
+      </a-sphere>
+
+      <!-- Mercurio -->
+      <a-sphere color="#b5b5b5" radius="0.2" position="-3 1 -5">
+        <a-animation attribute="rotation" to="0 360 0" dur="5000" repeat="indefinite"></a-animation>
+        <a-animation attribute="position" dur="5000" repeat="indefinite" easing="linear" to="0 1 -5"></a-animation>
+        <a-texture src="https://www.solarsystemscope.com/textures/download/2k_mercury.jpg"></a-texture>
+      </a-sphere>
+
+      <!-- Venus -->
+      <a-sphere color="#d4af37" radius="0.3" position="-5 1 -5">
+        <a-animation attribute="rotation" to="0 360 0" dur="7000" repeat="indefinite"></a-animation>
+        <a-animation attribute="position" dur="7000" repeat="indefinite" easing="linear" to="0 1 -5"></a-animation>
+        <a-texture src="https://www.solarsystemscope.com/textures/download/2k_venus.jpg"></a-texture>
+      </a-sphere>
+
+      <!-- Tierra -->
+      <a-sphere color="#4e8cff" radius="0.35" position="-7 1 -5">
+        <a-animation attribute="rotation" to="0 360 0" dur="10000" repeat="indefinite"></a-animation>
+        <a-animation attribute="position" dur="10000" repeat="indefinite" easing="linear" to="0 1 -5"></a-animation>
+        <a-texture src="https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg"></a-texture>
+      </a-sphere>
+
+      <!-- Marte -->
+      <a-sphere color="#d04a0a" radius="0.25" position="-9 1 -5">
+        <a-animation attribute="rotation" to="0 360 0" dur="12000" repeat="indefinite"></a-animation>
+        <a-animation attribute="position" dur="12000" repeat="indefinite" easing="linear" to="0 1 -5"></a-animation>
+        <a-texture src="https://www.solarsystemscope.com/textures/download/2k_mars.jpg"></a-texture>
+      </a-sphere>
+
+      <!-- Fondo espacial -->
+      <a-sky src="https://www.solarsystemscope.com/textures/download/stars_texture.jpg"></a-sky>
+    </a-scene>
+  </body>
+</html>
